@@ -5,11 +5,13 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
-
+dockerpath=trangocquy123/quytn7
 # Step 2:  
 # Authenticate & tag
+docker tag quytn7 $dockerpath
+
 echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
 # Push image to a docker repository
+docker push $dockerpath
