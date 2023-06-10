@@ -17,8 +17,9 @@ The project goal is operationalize this working, machine learning microservice u
 
 ## Setup the Environment
 - You should have Python 3.7 available in your host. 
-python3 -m venv ~/.devops
-source ~/.devops/bin/activate
+step by step
+1. python3 -m venv ~/.devops
+2. source ~/.devops/bin/activate
 
 Run `make install` to install package from requirement
 
