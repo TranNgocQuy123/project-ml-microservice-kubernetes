@@ -1,1 +1,21 @@
 <paste log output from Kubernetes-mediated prediction, here>
+[root@ip-172-31-89-147 project-ml-microservice-kubernetes]# ./run_kubernetes.sh
+pod/quytn7 created
+NAME     READY   STATUS              RESTARTS   AGE
+quytn7   0/1     ContainerCreating   0          1s
+error: unable to forward port because pod is not running. Current status=Pending
+[root@ip-172-31-89-147 project-ml-microservice-kubernetes]# ^C
+[root@ip-172-31-89-147 project-ml-microservice-kubernetes]# kubectl get pods
+NAME     READY   STATUS    RESTARTS   AGE
+quytn7   1/1     Running   0          19s
+[root@ip-172-31-89-147 project-ml-microservice-kubernetes]#
+[root@ip-172-31-89-147 project-ml-microservice-kubernetes]# vi run_kubernetes.sh
+[root@ip-172-31-89-147 project-ml-microservice-kubernetes]# ./run_kubernetes.sh
+Error from server (AlreadyExists): pods "quytn7" already exists
+NAME     READY   STATUS    RESTARTS   AGE
+quytn7   1/1     Running   0          100s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
