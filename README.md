@@ -16,7 +16,7 @@ The project goal is operationalize this working, machine learning microservice u
 7. Push a code to Github repo with CircleCI to indicate that your code has been tested
 
 ## Setup the Environment
-# You should have Python 3.7 available in your host. 
+- You should have Python 3.7 available in your host. 
 python3 -m venv ~/.devops
 source ~/.devops/bin/activate
 
