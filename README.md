@@ -30,5 +30,22 @@ Run `make install` to install package from requirement
 ### Kubernetes Steps
 1. Setup and Configure Docker locally
 2. Setup and Configure Kubernetes locally
+- install minikube
+```bash
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+mimikube start
+```
 3. Create Flask app in Container
+you can run command at the folder project to build image:
+```bash
+docker build --tag=[your-name-container] .
+```
 4. Run via kubectl ( or install minikune to start)
+```bash
+./run_kubernetes.sh
+```
+Using make_prediction to test app. Open new terminal and run command:
+```bash
+./make_prediction.sh
+```
