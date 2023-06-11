@@ -28,8 +28,7 @@ Run `make install` to install package from requirement
 2. Run in Kubernetes:  `./run_kubernetes.sh`
 
 ### Kubernetes Steps
-
-1. Install and Configure Docker locally
-2. Install and Configure Kubernetes locally
-3. Create Flask app in Container 
+1. Setup and Configure Docker locally
+2. Setup and Configure Kubernetes locally
+3. Create Flask app in Container
 4. Run via kubectl ( or install minikune to start)
